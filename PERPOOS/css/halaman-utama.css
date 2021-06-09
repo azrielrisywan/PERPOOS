@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --gutter: 20px;
+}
+.perpoos {
+    font-family: Orbitron;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.OOS {
+    color: #EBAD65;
+}
+.container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.navColor {
+    width: 100%;
+    background-color: #F4E5D4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.user, button p {
+    width: 40px;
+    cursor: pointer;
+}
+.masukan {
+    padding-right: 5px;
+}
+.navAtas {
+    flex: 1;
+    text-align: right;
+}
+.navAtas, .menuList, .masukan, .koleksi {
+    list-style: none;
+    display: inline-block;
+    padding-right: 15px;
+}
+.navAtas, .menuList, .masukan, .koleksi, .aKoleksi, .aMasukan {
+    font-family: Niramit;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+.navAtas, .menuList, .masukan, .koleksi, .aMasukan:hover, .aKoleksi:hover {
+    color: #EBAD65;
+}
+.user-btn {
+    width: 50px;
+    height: 40px;
+    border: 0;
+    background: none;
+    margin-right: 30px;
+    border-radius: 30px;
+    transition: width 0.5s;
+}
+.user-btn p {
+    width: 200px;
+    display: none;
+}
+p {
+    font-family: Niramit;
+    margin-top: 7px;
+}
+.user-btn:hover p {
+    display: block;
+}
+.user-btn:hover {
+    width: 230px;
+    display: flex;
+}
+.pencarian {
+    position: absolute;
+    top: 100px;
+    left: 84.8%;
+    transform: translate(0.5%, -50%);
+}
+.search-btn {
+    width: 30px;
+    height: 30px;
+    transform: translate(-5%, 40%);
+}
+.search-icon {
+    width: 29px;
+}
+.search-txt {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.line-1 {
+    width: 99.8%;
+    margin-top: 55px;
+    position: absolute;
+    height: 0;
+    border: 1px solid #F4E5D4;
+}
+.buku {
+    margin-top: 42px;
+    padding: var(--gutter) 0 20px 30px;
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    align-content: start;
+    width: 96%;
+}
+.buku h2 {
+    font-family: Niramit;
+}
+.buku > * {
+    grid-column: 2 / -2;
+}
+
+.buku > .full {
+    grid-column: 1 / -1;
+}
+.buku h2 {
+    float: left;
+}
+.link-buku {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: 10px;
+    grid-template-rows: minmax(150px, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: calc(28% - var(--gutter) * 2);
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+}
+.link-buku:before,
+.link-buku:after {
+    content: '';
+    width: 10px;
+}
+.hs > li,
+.buku-bindo, .buku-ipa, .buku-ips, .buku-seni, .buku-matematika,
+.buku-biografi, .buku-cerita-detektif, .buku-dongeng, .buku-peng-umum,
+.buku-resep {
+    font-family: Niramit;
+    scroll-snap-align: start;
+    padding: calc(var(--gutter) / 2 * 1.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+}
+.icon-seni, .icon-ipa, .icon-matematika,
+.icon-ips, .icon-bindo, .icon-biografi, .icon-cerita-detektif,
+.icon-dongeng, .icon-peng-umum, .icon-resep {
+    width: 100px;
+}
+button {
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+footer {
+    transform: translate(0%, -18%);
+    font-size: smaller;
+    padding-left: 20px;
+    font-family: Niramit;
+}
+@media only screen and (min-height: 700px) {
+    .container {
+        height: 100vh;
+    }
+}
+

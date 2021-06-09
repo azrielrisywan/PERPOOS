@@ -1,0 +1,458 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+}
+.container {
+    width: 100%;
+    height: 735px;
+    background: rgba(255,255,255,1);
+    padding: -50px 9px;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.content {
+    width: 100%;
+    height: 837px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    left: 9px;
+    overflow: hidden;
+}
+.login-msg {
+    width: 535px;
+    color: rgba(84,84,84,1);
+    position: absolute;
+    top: 276px;
+    left: 69px;
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+.lupa-pass {
+    width: 139px;
+    color: rgba(84,84,84,0.5699999928474426);
+    position: absolute;
+    top: 675px;
+    left: 115px;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.login-switch {
+    width: 163px;
+    color: rgba(84,84,84,0.5699999928474426);
+    position: absolute;
+    top: 675px;
+    left: 338px;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.NIS {
+    width: 460px;
+    position: absolute;
+    top: 390px;
+    left: 69px;
+    height: 35px;
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+    border-radius: 5px;
+}
+.labelNIS {
+    font-family: Poppins;
+    position: absolute;
+    top: 360px;
+    left: 71px;
+}
+.pass {
+    width: 460px;
+    position: absolute;
+    top: 479px;
+    left: 69px;
+    height: 35px;
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+    border-radius: 5px;
+}
+.labelPass {
+    font-family: Poppins;
+    position: absolute;
+    top: 450px;
+    left: 71px;
+}
+.login-link {
+    width: 65px;
+    color: rgba(234,173,100,1);
+    position: absolute;
+    top: 80px;
+    left: 467px;
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+}
+.signup-link {
+    width: 73px;
+    color: rgba(84,84,84,1);
+    position: absolute;
+    top: 80px;
+    left: 571px;
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+    text-decoration: none;
+}
+.login-img {
+    width: 710px;
+    height: 735px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 711px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+.sign-in-btn {
+    width: 465px;
+    height: 43px;
+    color: ghostwhite;
+    font-family: Poppins;
+    background: linear-gradient(#F3CD9F 40.1%, #C4C4C4 100%);
+    opacity: 1;
+    position: absolute;
+    top: 576px;
+    left: 65px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.44999998807907104);
+    border: none;
+    overflow: hidden;
+}
+.login-text {
+    width: 107px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 226px;
+    left: 69px;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+.PERPOOS {
+    width: 139px;
+    position: absolute;
+    top: 74px;
+    left: 70px;
+    font-family: Orbitron;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+.OOS {
+    color: #EBAD65;
+}
+.copyright {
+    text-align: left;
+}
+
+/* Nih disini semua codingan responsivenya, pake "max-width" untuk menyesuaikan sm device yg lebarnya segitu,
+misal untuk HP lebarnya dibawah 500px, kita sesuaikan pake "@media only screen and (max-width: 500px). Terus sekalian
+lihat di browser hasil responsivenya
+-- Azriel R.A.
+ */
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 100%;
+    }
+    .login-img {
+        width: 50%;
+    }
+    .login-form {
+        width: 50%;
+    }
+    .login-link {
+        position: absolute;
+        left: 400px;
+    }
+    .signup-link {
+        position: absolute;
+        left: 504px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .login-img {
+        height: 550px;
+        position: absolute;
+        top: 150px;
+        left: 570px;
+    }
+    .login-link {
+        position: absolute;
+        top: 75px;
+        left: 720px;
+    }
+    .signup-link {
+        position: absolute;
+        left: 810px;
+        top: 75px;
+    }
+    .login-msg {
+        width: 400px;
+    }
+    .NIS, .pass, .sign-in {
+        width: 400px;
+    }
+    .lupa-pass {
+        position: absolute;
+        left: 100px;
+    }
+    .login-switch {
+        position: absolute;
+        left: 285px;
+    }
+}
+@media only screen and (min-height: 1300px) {
+    .container {
+        margin-top: 75px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .login-img {
+        display: none;
+    }
+    .login-link {
+        position: absolute;
+        left: 630px;
+    }
+    .signup-link {
+        position: absolute;
+        left: 734px;
+    }
+    .login-msg {
+        left: 185px;
+        width: 400px;
+    }
+    .NIS, .pass, .sign-in, .labelNIS, .labelPass, .login-text {
+        left: 185px;
+        width: 500px;
+    }
+    .lupa-pass {
+        left: 240px;
+    }
+    .login-switch {
+        left: 480px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .login-link {
+        left: 600px;
+    }
+    .signup-link {
+        left: 700px;
+    }
+    .PERPOOS {
+        left: 100px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .login-msg {
+        left: 100px;
+        width: 300px;
+    }
+    .NIS, .pass, .sign-in, .labelNIS, .labelPass, .login-text {
+        left: 100px;
+        width: 400px;
+    }
+    .login-link {
+        left: 350px;
+    }
+    .signup-link {
+        left: 430px;
+    }
+    .lupa-pass {
+        left: 120px;
+    }
+    .login-switch {
+        left: 320px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .PERPOOS {
+        left: 40px;
+    }
+    .login-link {
+        left: 270px;
+    }
+    .signup-link {
+        left: 350px;
+    }
+    .login-msg {
+        left: 40px;
+        width: 300px;
+    }
+    .NIS, .pass, .sign-in, .labelNIS, .labelPass, .login-text {
+        left: 40px;
+        width: 400px;
+    }
+    .lupa-pass {
+        left: 65px;
+    }
+    .login-switch {
+        left: 250px;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .PERPOOS {
+        left: 20px;
+    }
+    .login-link {
+        left: 250px;
+    }
+    .signup-link {
+        left: 330px;
+    }
+    .login-msg {
+        left: 20px;
+        width: 300px;
+    }
+    .NIS, .pass, .sign-in, .labelNIS, .labelPass, .login-text {
+        left: 20px;
+        width: 400px;
+    }
+    .lupa-pass {
+        left: 45px;
+    }
+    .login-switch {
+        left: 230px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .PERPOOS {
+        left: 100px;
+        top: 40px;
+    }
+    .NIS, .pass, .sign-in {
+        width: 300px;
+    }
+    .login-link {
+        top: 130px;
+        left: 60px;
+    }
+    .signup-link {
+        top: 130px;
+        left: 200px;
+    }
+    .lupa-pass {
+        top: 650px;
+        width: 20px;
+        left: 35px;
+    }
+    .login-switch {
+        top: 650px;
+        width: 60px;
+        left: 230px;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .PERPOOS {
+        left: 120px;
+    }
+    .login-link {
+        left: 70px;
+    }
+    .signup-link {
+        left: 230px;
+    }
+    .NIS, .pass, .sign-in {
+        width: 340px;
+    }
+    .login-switch {
+        left: 270px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .PERPOOS {
+        left: 105px;
+    }
+    .signup-link {
+        left: 200px;
+    }
+    .NIS, .pass, .sign-in {
+        width: 300px;
+    }
+    .login-switch {
+        left: 240px;
+    }
+}
+@media only screen and (max-width: 321px) {
+    .PERPOOS {
+        left: 80px;
+    }
+    .login-link {
+        left: 40px;
+    }
+    .signup-link {
+        left: 190px;
+    }
+    .login-msg {
+        font-size: small;
+    }
+    .NIS, .pass, .sign-in {
+        width: 220px;
+    }
+    .lupa-pass, .login-switch {
+        font-size: smaller;
+    }
+    .login-switch {
+        left: 170px;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .PERPOOS {
+        left: 59px;
+    }
+    .signup-link {
+        left: 150px;
+    }
+}
+
+
+
+
